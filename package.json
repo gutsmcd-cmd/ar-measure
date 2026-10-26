@@ -1,0 +1,25 @@
+{
+  "name": "ar-measure",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ARメジャー / AR Tape Measure — measure real things with your phone camera (WebXR).",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "icons": "node scripts/icons.mjs",
+    "build": "node scripts/icons.mjs && tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "0.170.0",
+    "@types/webxr": "0.5.20",
+    "sharp": "0.33.5",
+    "typescript": "5.9.3",
+    "vite": "6.4.3",
+    "vite-plugin-pwa": "0.21.2"
+  }
+}

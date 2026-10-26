@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1c3d32" />
+<link rel="icon" href="./icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="./icons/icon-192.png" />
+<title>ARメジャー / AR Tape Measure</title>
+</head>
+<body>
+<header class="top">
+  <h1 data-t="app"></h1>
+  <div class="switches">
+    <button id="big" class="chip" aria-pressed="false" data-t="big"></button>
+    <button id="lang" class="chip" lang="en">English</button>
+  </div>
+</header>
+<main id="home">
+  <p class="lead" data-t="lead"></p>
+  <ol class="steps">
+    <li data-t="s1"></li>
+    <li data-t="s2"></li>
+    <li data-t="s3"></li>
+    <li data-t="s4"></li>
+  </ol>
+  <div class="unitrow"><span data-t="unit"></span>
+    <button class="chip unit" data-u="cm" aria-pressed="true">cm / m</button>
+    <button class="chip unit" data-u="in" aria-pressed="false">inch / ft</button>
+  </div>
+  <button id="start" class="primary" data-t="start"></button>
+  <div id="msg" class="msg" hidden></div>
+  <p class="note" data-t="note"></p>
+</main>
+
+<div id="overlay" hidden>
+  <div id="labels"></div>
+  <div class="hint" id="hint"></div>
+  <div class="total" id="total"></div>
+  <div class="bar">
+    <button id="undo" data-t="undo"></button>
+    <button id="clear" data-t="clear"></button>
+    <button id="units" class="unitbtn">cm</button>
+    <button id="add" class="primary" data-t="add"></button>
+    <button id="exit" data-t="exit"></button>
+  </div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
